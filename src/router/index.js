@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import NotFound from '../components/Generic/404.vue'
 import MovieDetails from '../views/MovieDetails.vue'
+import Search from '../views/Search.vue'
 import VueMeta from 'vue-meta'
 
 Vue.use(VueMeta)
@@ -23,6 +24,11 @@ Vue.use(VueRouter)
     component: function () {
       return import(/* webpackChunkName: "about" */ '../views/Popular.vue')
     }
+  },
+  {
+    path: '/search',
+    name: 'Movie Search',
+    component: Search
   },
   {
     path: '/movies/:id',
