@@ -1,5 +1,11 @@
 <template>
-  <div class="about">
+  <div class="popular">
+    <div class="movies__title my-8 leading-7">
+      <span class="text-sm sm:text-base tracking-tighter uppercase">What to watch next</span>
+      <h1
+        class="text-2xl sm:text-4xl font-bold tracking-wide uppercase header_highlight w-max-content mx-auto"
+      >Popular movies</h1>
+    </div>
     <MovieList :movies="popularMovies" />
   </div>
 </template>

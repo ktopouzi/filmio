@@ -2,11 +2,13 @@
   <div id="app">
     <Header :routes="myRoutes" />
     <router-view />
+    <Footer />
   </div>
 </template>
 
 <script>
 import Header from "@/components/Header.vue";
+import Footer from "@/components/Footer.vue";
 import links from "@/assets/data/menu.json";
 export default {
   data() {
@@ -14,9 +16,13 @@ export default {
       myRoutes: links
     };
   },
+  mounted() {
+    this.$store.dispatch("getPopularMovies");
+  },
   name: "App",
   components: {
-    Header
+    Header,
+    Footer
   },
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
@@ -33,10 +39,17 @@ export default {
 body {
   margin: 0;
   box-sizing: border-box;
+  color: #383838;
+}
+.header_highlight {
+  position: relative;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #c4ddff 50%);
+  z-index: 1;
 }
 
 #app {
-  font-family: Poppins;
+  font-family: Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

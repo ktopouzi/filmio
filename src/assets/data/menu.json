@@ -4,8 +4,12 @@
         "to": "/"
     },
     {
-        "name": "Movies",
-        "to": "/movies"
+        "name": "Search",
+        "to": "/search"
+    },
+    {
+        "name": "Popular",
+        "to": "/popular"
     },
     {
         "name": "Social",
