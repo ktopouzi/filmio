@@ -1,6 +1,6 @@
 <template>
   <div class="bg-gray-100 py-4">
-    <div class="movie-details__go-back p-4 uppercase under">
+    <div class="movie-details__go-back p-4 uppercase under container mx-auto">
       <div class="flex justify-start items-center cursor-pointer" @click="$router.go(-1)">
         <svg class="w-6 mr-2" fill="currentColor" viewBox="0 0 20 20">
           <path
