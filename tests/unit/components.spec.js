@@ -17,6 +17,7 @@ describe('Components', () => {
     const movie = {"poster_path":"/",
     "title":"Title",
     "overview":"Overview",
+    "release_date":"2020-07-10",
     "vote_average":6.3,
     "vote_count":25,
   }
