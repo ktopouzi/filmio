@@ -33,3 +33,5 @@ To execute the tests
 ```
 yarn test:unit
 ```
+
+*Remember you need a .env file with the API KEY from [themoviedb.org](themoviedb.org) named VUE_APP_APIKEY*
