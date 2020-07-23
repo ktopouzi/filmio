@@ -5,6 +5,7 @@
 * MovieList
 * SigleMovie
 * MovieDetail
+* Search
 
 ### Header
 Header accepts an array with routes and display them in the top right of the header. The `data` folder holds the actual data. This ensures scalability and makes a great test scenario.
@@ -19,6 +20,9 @@ This abstract component describes the single movie that will be shown in a grid 
 This component displayes the `Movie` data in the coresponding view. It takes advantage of the dynamic route and display every movie, given a valid ID. You can actually replace the Id of the path `/movies/id` with any valid one and filmio will fetch the movie data for you!
 **Try `557` for some web and strings 😊**
 
+
+### Search
+The search component utilizes the rest compontes of the app and let you search for every movie you query.
 
 
 ## Project setup
