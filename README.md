@@ -5,6 +5,7 @@
 * MovieList
 * SigleMovie
 * MovieDetail
+* Search
 
 ### Header
 Header accepts an array with routes and display them in the top right of the header. The `data` folder holds the actual data. This ensures scalability and makes a great test scenario.
@@ -20,6 +21,9 @@ This component displayes the `Movie` data in the coresponding view. It takes adv
 **Try `557` for some web and strings 😊**
 
 
+### Search
+The search component utilizes the rest compontes of the app and let you search for every movie you query.
+
 
 ## Project setup
 
@@ -33,3 +37,5 @@ To execute the tests
 ```
 yarn test:unit
 ```
+
+*Remember you need a .env file with the API KEY from [themoviedb.org](themoviedb.org) named VUE_APP_APIKEY*
